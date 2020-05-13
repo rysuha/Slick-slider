@@ -1,0 +1,140 @@
+.slider {
+
+    &-box {
+        position: relative;
+        max-width: 535px;
+        margin: 0 auto;
+        padding: 90px 45px 35px 45px;
+        text-align: center;
+        border: 1px solid #cececf;
+        border-radius: 2px;
+
+        &:hover {
+            border: none;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,.2);
+        }
+
+        &-image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 100px;
+            width: 100px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border: 1px solid #cececf;
+                border-radius: 100%;
+            }
+        }
+
+        &-text {
+            p  {
+                font-size: 17px;
+                font-family: $font-ssp;
+                font-weight: 400;
+                color: #a0a0a0;
+                margin: 0;
+            }
+        }
+        &-client {
+            font-family: $font-ssp;
+            color: #585858;
+
+            h5 {
+                font-size: 17px;
+                margin: 0;
+            }
+            
+            span {
+                font-style: italic;
+            }
+        }
+    }
+    .slick-slide {
+        padding: 50px 0 15px;
+        outline: none;
+    }
+    .slick-next,
+    .slick-prev {
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,.2);
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(calc(50% - 35px));
+        position: absolute;
+        background-color: #fff;
+        z-index: 2;
+        border: 1px solid #cececf;
+        transition: 0.3s;
+    }
+    .slick-next:hover,
+    .slick-prev:hover {
+        background-color: #ff5c36;
+        .fa-angle-left:before,
+        .fa-angle-right:before {
+            color: #fff;
+        }
+    }
+    .slick-prev {
+        left: -25px;
+    }
+    .slick-next {
+        right: -25px;
+    }
+    .fa-angle-left,
+    .fa-angle-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        padding: 5px 0px;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        display: block; 
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+
+        @include down(815){
+            justify-content: center;
+            position: relative;
+            top: 15px;
+        }
+    
+         li {
+            position: relative;
+            display: inline-block;
+            width: 18px;
+            height: 6px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer; 
+    
+            button { 
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 18px;
+                height: 6px;
+                cursor: pointer;
+                background-color: #e1e1e1;
+                border: 0;
+                border-radius: 2px;
+                outline: none;
+                
+                &:hover {
+                    background-color: #ff6e47;
+                }
+            }
+        }
+    }
+}
