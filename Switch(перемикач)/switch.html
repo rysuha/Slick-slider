@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="service-box-wrapper">
+        <div class="service-box">
+            <div id="service-1" class="service-box-item">
+                <img src="img/serv-1.png" alt="">
+            </div>
+            <div id="service-2" class="service-box-item">
+                <img src="img/serv-2.png" alt="">
+            </div>
+            <div id="service-3" class="service-box-item">
+                <img src="img/serv-3.png" alt="">
+            </div>
+            <div id="service-4" class="service-box-item">
+                <img src="img/serv-1.png" alt="">
+            </div>
+        </div>
+        <div class="service-box ">
+            <div class="service-box-contain active" data-target="#service-1">
+                <div class="service-box-text">
+                    <h3>Industrial Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ducimus earum totam ad sint error porro. Consectetur, sunt,
+                        aperiam. Magni rem optio distinctio illum consequuntur delectus
+                        nulla illo aperiam itaque cumque.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vel officia vitae eveniet quam rem unde facilis.</p>
+                    <p>Vitae eveniet quam rem unde facilis.</p>
+                    <div class="service-box-button">
+                        <a href="/img/work-img1.png" data-fancybox="card" class="btn btn-info btn-border btn-transition ">
+                            <img src="img/plus.png" alt="">
+                            Know More
+                        </a>
+                    </div>
+                </div> 
+    
+                <div class="service-box-image">
+                    <img src="img/watch.png" alt="">
+                </div>
+            </div>
+            <div class="service-box-contain" data-target="#service-2">
+                <div class="service-box-text">
+                    <h3>Modern App Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ducimus earum totam ad sint error porro. Consectetur, sunt,
+                        aperiam. Magni rem optio distinctio illum consequuntur delectus
+                        nulla illo aperiam itaque cumque.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vel officia vitae eveniet quam rem unde facilis.</p>
+                    <p>Vitae eveniet quam rem unde facilis.</p>
+                    <div class="service-box-button">
+                        <a href="/img/work-img1.png" data-fancybox="card" class="btn btn-info btn-border btn-transition ">
+                            <img src="img/plus.png" alt="">
+                            Know More
+                        </a>
+                    </div>
+                </div>
+              
+                <div class="service-box-image">
+                    <img src="img/watch2.png" alt="">
+                </div>
+            </div>
+            <div class="service-box-contain" data-target="#service-3">
+                <div class="service-box-text">
+                    <h3>Fashion Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ducimus earum totam ad sint error porro. Consectetur, sunt,
+                        aperiam. Magni rem optio distinctio illum consequuntur delectus
+                        nulla illo aperiam itaque cumque.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vel officia vitae eveniet quam rem unde facilis.</p>
+                    <p>Vitae eveniet quam rem unde facilis.</p>
+                    <div class="service-box-button">
+                        <a href="/img/work-img1.png" data-fancybox="card" class="btn btn-info btn-border btn-transition ">
+                            <img src="img/plus.png" alt="">
+                            Know More
+                        </a>
+                    </div>
+                </div>
+                <div class="service-box-image">
+                    <img src="img/watch.png" alt="">
+                </div>
+            </div>
+            <div class="service-box-contain" data-target="#service-4">
+                <div class="service-box-text">
+                    <h3>Software Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ducimus earum totam ad sint error porro. Consectetur, sunt,
+                        aperiam. Magni rem optio distinctio illum consequuntur delectus
+                        nulla illo aperiam itaque cumque.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Vel officia vitae eveniet quam rem unde facilis.</p>
+                    <p>Vitae eveniet quam rem unde facilis.</p>
+                    <div class="service-box-button">
+                        <a href="/img/work-img1.png" data-fancybox="card" class="btn btn-info btn-border btn-transition ">
+                            <img src="img/plus.png" alt="">
+                            Know More
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-box-image">
+                    <img src="img/watch4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+            $('.service-box-item').on('click', function () {
+                var id = $(this).attr('id'); //
+                $('[data-target]').removeClass('active');
+                // $('.service-box-contain').hide();
+                $('[data-target="#' + id + '"]').addClass('active');
+    
+                $('body').addClass('overflow-hidden-on-mob');
+            });
+    </script>
+
+</body>
+</html>
